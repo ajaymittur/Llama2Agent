@@ -2,8 +2,12 @@ import: definition.yaml
 
 concurrency:
   task:
-    dbbench-std: 5
-    os-std: 5
+    # dbbench-std: 5
+    # os-std: 5
+    # alfworld-std: 5
+    # cg-std: 5
+    # ltp-std: 5
+    kg-std: 5
   agent:
     gpt-3.5-turbo-0613: 5
     llama-2-7b-chat: 5
@@ -14,7 +18,11 @@ assignments: # List[Assignment] | Assignment
       - llama-2-7b-chat
     task:
       # - dbbench-std
-      - os-std
+      # - os-std
+      # - alfworld-std
+      # - cg-std
+      # - ltp-std
+      - kg-std
 
 output: "outputs/{TIMESTAMP}"
 # output: "outputs/test"
