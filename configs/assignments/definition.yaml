@@ -9,3 +9,4 @@ definition:
     import:
       - ../agents/api_agents.yaml
       - ../agents/fs_agent.yaml
+      - ../agents/llama2_agent.yaml

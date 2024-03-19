@@ -6,12 +6,15 @@ concurrency:
     os-std: 5
   agent:
     gpt-3.5-turbo-0613: 5
+    llama-2-7b-chat: 5
 
 assignments: # List[Assignment] | Assignment
   - agent: # "task": List[str] | str ,  "agent": List[str] | str
-      - gpt-3.5-turbo-0613
+      # - gpt-3.5-turbo-0613
+      - llama-2-7b-chat
     task:
-      - dbbench-std
+      # - dbbench-std
       - os-std
 
 output: "outputs/{TIMESTAMP}"
+# output: "outputs/test"

@@ -1,0 +1,11 @@
+default:
+  module: "src.client.agents.Llama2Agent"
+
+llama-2-7b-chat:
+  parameters:
+    endpoint_name: "<YOUR_ENDPOINT>"
+    # max_new_tokens: 512
+    # top_p: 0.9
+    # temperature: 0.01
+    # decoder_input_details: True
+    # details: True
