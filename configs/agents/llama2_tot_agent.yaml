@@ -1,9 +1,10 @@
 default:
-  module: "src.client.agents.Llama2Agent"
+  module: "src.client.agents.Llama2ToTAgent"
 
-llama-2-7b-chat:
+llama-2-7b-chat-tot:
   parameters:
     endpoint_name: "<YOUR_ENDPOINT>"
+    branching_factor: 3
     # max_new_tokens: 512
     # top_p: 0.9
     # do_sample: True
